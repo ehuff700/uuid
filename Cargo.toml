@@ -55,7 +55,7 @@ status = "actively-developed"
 
 [features]
 default = ["std"]
-std = []
+std = ["getrandom/os"]
 macro-diagnostics = ["dep:uuid-macro-internal"]
 
 # NOTE: When adding new features, check the `ci.yml` workflow
@@ -128,7 +128,8 @@ default-features = false
 # in `uuid`'s library docs
 [dependencies.getrandom]
 optional = true
-git = "https://github.com/rust-random/getrandom.git"
+git = "https://github.com/ehuff700/getrandom.git"
+default-features = false
 
 # Private
 [dependencies.rand]
