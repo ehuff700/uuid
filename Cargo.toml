@@ -128,7 +128,7 @@ default-features = false
 # in `uuid`'s library docs
 [dependencies.getrandom]
 optional = true
-version = "0.2"
+git = "https://github.com/rust-random/getrandom.git"
 
 # Private
 [dependencies.rand]
